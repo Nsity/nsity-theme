@@ -23,6 +23,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<footer class="site-footer" id="colophon">
 
+					&copy; 2018 Designed by Nsity
 
 				</footer><!-- #colophon -->
 

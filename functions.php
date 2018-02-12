@@ -64,3 +64,10 @@ require get_template_directory() . '/inc/bootstrap-wp-navwalker.php';
  * Load Editor functions.
  */
 require get_template_directory() . '/inc/editor.php';
+
+
+require get_template_directory() . '/project_post_type.php';
+
+
+require_once(get_template_directory() . "/widgets/widget_manager.php");
+NNWidgetManager::registerWidget();

@@ -23,3 +23,12 @@ if ( ! function_exists( 'understrap_scripts' ) ) {
 } // endif function_exists( 'understrap_scripts' ).
 
 add_action( 'wp_enqueue_scripts', 'understrap_scripts' );
+
+add_action( 'wp_enqueue_scripts', 'understrap_custom_scripts', 20 );
+
+function understrap_custom_scripts() {
+	$the_theme = wp_get_theme();
+
+
+	wp_enqueue_script( 'typing-carousel', get_template_directory_uri() . '/js/typing-carousel.js', array('jquery'), $the_theme->get( 'Version' ), true );
+}
