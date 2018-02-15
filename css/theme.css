@@ -9532,6 +9532,103 @@ a.skip-link {
     top: 25px;
     opacity: 0; } }
 
+.section-header {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.23;
+  padding: 0;
+  margin-bottom: 40px; }
+
+.top-wrapper {
+  margin-bottom: 105px;
+  text-align: center; }
+
+.section {
+  padding-top: 150px;
+  padding-bottom: 150px; }
+
+.muted-bg {
+  background-color: #e0e0e0; }
+
+.timeline .timeline-item {
+  padding-bottom: 30px;
+  position: relative; }
+  .timeline .timeline-item::before, .timeline .timeline-item::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .timeline .timeline-item .timeline-item-body {
+    position: relative;
+    width: 50%;
+    text-align: right; }
+    .timeline .timeline-item .timeline-item-body.flipped {
+      text-align: left;
+      float: right !important; }
+      .timeline .timeline-item .timeline-item-body.flipped .timeline-item-block {
+        padding-left: 40px;
+        padding-right: 0; }
+    .timeline .timeline-item .timeline-item-body .timeline-item-block {
+      padding-right: 40px; }
+      .timeline .timeline-item .timeline-item-body .timeline-item-block h3 {
+        margin-bottom: 6px;
+        margin-top: 2px;
+        color: #0f3f7a;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 1.35; }
+      .timeline .timeline-item .timeline-item-body .timeline-item-block .timeline-body-text {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: 15px;
+        line-height: 1.55; }
+        .timeline .timeline-item .timeline-item-body .timeline-item-block .timeline-body-text p {
+          margin-bottom: 0; }
+  .timeline .timeline-item .line {
+    background-color: #0f3f7a;
+    position: absolute;
+    width: 2px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto; }
+  .timeline .timeline-item:first-child .line {
+    top: 10px; }
+  .timeline .timeline-item .circle {
+    width: 20px;
+    height: 20px;
+    background-color: #0f3f7a;
+    border: 2px solid #e0e0e0;
+    border-radius: 100px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 5px;
+    margin: 0 auto; }
+  @media (max-width: 991.98px) {
+    .timeline .timeline-item .timeline-item-body {
+      float: right;
+      text-align: left;
+      width: 100%; }
+      .timeline .timeline-item .timeline-item-body .timeline-item-block {
+        padding-right: 0;
+        padding-left: 20px; }
+        .timeline .timeline-item .timeline-item-body .timeline-item-block h3 {
+          margin-bottom: 0; }
+        .timeline .timeline-item .timeline-item-body .timeline-item-block .timeline-body-text {
+          margin-top: 5px; }
+      .timeline .timeline-item .timeline-item-body.flipped .timeline-item-block {
+        padding-left: 20px; }
+    .timeline .timeline-item .line {
+      right: auto;
+      left: 4px; }
+    .timeline .timeline-item .circle {
+      width: 14px;
+      height: 14px;
+      top: 8px;
+      left: -2px;
+      right: auto; } }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style

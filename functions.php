@@ -70,4 +70,6 @@ require get_template_directory() . '/project_post_type.php';
 
 
 require_once(get_template_directory() . "/widgets/widget_manager.php");
-NNWidgetManager::registerWidget();
+NSWidgetManager::registerWidget();
+
+

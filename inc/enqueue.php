@@ -32,3 +32,20 @@ function understrap_custom_scripts() {
 
 	wp_enqueue_script( 'typing-carousel', get_template_directory_uri() . '/js/typing-carousel.js', array('jquery'), $the_theme->get( 'Version' ), true );
 }
+
+
+add_action( 'init', 'ns_enqueue_scripts' );
+function ns_enqueue_scripts() {
+
+	require_once(dirname(__FILE__)."/../helpers/helper_enqueue_file.php");
+	$helperReg = new NSHelperEnqueueFile();
+
+	$helperReg->registrateScript(
+		"ns-timeline-settings", 
+		get_template_directory_uri() . "/widgets/js/timeline-settings.js", 
+		array('jquery'), 
+		dirname(__FILE__) . "/../widgets/js/timeline-settings.js"
+	);
+
+}
+
