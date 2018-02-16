@@ -5,6 +5,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&subset=latin,cyrillic);
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9476,6 +9477,9 @@ a.skip-link {
 
 .gallery-caption {
   display: block; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
 
 .mouse-icon {
   position: absolute;
