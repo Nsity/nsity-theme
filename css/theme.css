@@ -9662,6 +9662,16 @@ body {
     .column-item-body .description {
       font-size: 14px; } }
 
+.big-wrapper {
+  padding: 50px 0; }
+
+#wrapper-footer {
+  background-color: #292929; }
+
+.site-footer {
+  color: white;
+  font-weight: 600; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style
