@@ -47,5 +47,12 @@ function ns_enqueue_scripts() {
 		dirname(__FILE__) . "/../widgets/js/timeline-settings.js"
 	);
 
+	$helperReg->registrateScript(
+		"ns-columns-settings", 
+		get_template_directory_uri() . "/widgets/js/columns-settings.js", 
+		array('jquery'), 
+		dirname(__FILE__) . "/../widgets/js/columns-settings.js"
+	);	
+
 }
 

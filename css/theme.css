@@ -9554,40 +9554,40 @@ body {
 .muted-bg {
   background-color: #e0e0e0; }
 
-.timeline .timeline-item {
+.timeline-item {
   padding-bottom: 30px;
   position: relative; }
-  .timeline .timeline-item::before, .timeline .timeline-item::after {
+  .timeline-item::before, .timeline-item::after {
     content: '';
     display: table;
     clear: both; }
-  .timeline .timeline-item .timeline-item-body {
+  .timeline-item-body {
     position: relative;
     width: 50%;
     text-align: right; }
-    .timeline .timeline-item .timeline-item-body.flipped {
+    .timeline-item-body.flipped {
       text-align: left;
       float: right !important; }
-      .timeline .timeline-item .timeline-item-body.flipped .timeline-item-block {
+      .timeline-item-body.flipped .timeline-item-block {
         padding-left: 40px;
         padding-right: 0; }
-    .timeline .timeline-item .timeline-item-body .timeline-item-block {
+    .timeline-item-body .timeline-item-block {
       padding-right: 40px; }
-      .timeline .timeline-item .timeline-item-body .timeline-item-block h3 {
+      .timeline-item-body .timeline-item-block h3 {
         margin-bottom: 6px;
         margin-top: 2px;
         color: #0f3f7a;
         font-weight: 600;
         font-size: 22px;
         line-height: 1.35; }
-      .timeline .timeline-item .timeline-item-body .timeline-item-block .timeline-body-text {
+      .timeline-item-body .timeline-item-block .timeline-body-text {
         margin-top: 10px;
         margin-bottom: 5px;
         font-size: 15px;
         line-height: 1.55; }
-        .timeline .timeline-item .timeline-item-body .timeline-item-block .timeline-body-text p {
+        .timeline-item-body .timeline-item-block .timeline-body-text p {
           margin-bottom: 0; }
-  .timeline .timeline-item .line {
+  .timeline-item .line {
     background-color: #0f3f7a;
     position: absolute;
     width: 2px;
@@ -9596,9 +9596,9 @@ body {
     left: 0;
     right: 0;
     margin: 0 auto; }
-  .timeline .timeline-item:first-child .line {
+  .timeline-item:first-child .line {
     top: 10px; }
-  .timeline .timeline-item .circle {
+  .timeline-item .circle {
     width: 20px;
     height: 20px;
     background-color: #0f3f7a;
@@ -9610,28 +9610,57 @@ body {
     top: 5px;
     margin: 0 auto; }
   @media (max-width: 991.98px) {
-    .timeline .timeline-item .timeline-item-body {
+    .timeline-item .timeline-item-body {
       float: right;
       text-align: left;
       width: 100%; }
-      .timeline .timeline-item .timeline-item-body .timeline-item-block {
+      .timeline-item .timeline-item-body .timeline-item-block {
         padding-right: 0;
         padding-left: 20px; }
-        .timeline .timeline-item .timeline-item-body .timeline-item-block h3 {
+        .timeline-item .timeline-item-body .timeline-item-block h3 {
           margin-bottom: 0; }
-        .timeline .timeline-item .timeline-item-body .timeline-item-block .timeline-body-text {
+        .timeline-item .timeline-item-body .timeline-item-block .timeline-body-text {
           margin-top: 5px; }
-      .timeline .timeline-item .timeline-item-body.flipped .timeline-item-block {
+      .timeline-item .timeline-item-body.flipped .timeline-item-block {
         padding-left: 20px; }
-    .timeline .timeline-item .line {
+    .timeline-item .line {
       right: auto;
       left: 4px; }
-    .timeline .timeline-item .circle {
+    .timeline-item .circle {
       width: 14px;
       height: 14px;
       top: 8px;
       left: -2px;
       right: auto; } }
+
+.column-item {
+  text-align: center; }
+  .column-item img {
+    width: 90px;
+    margin-bottom: 25px;
+    height: auto; }
+  .column-item-body {
+    padding-left: 20px;
+    padding-right: 20px; }
+    .column-item-body h3 {
+      font-size: 30px;
+      line-height: 1.17;
+      margin-bottom: 25px;
+      margin-top: 12px; }
+    .column-item-body .description {
+      font-size: 1rem;
+      line-height: 1.55;
+      font-weight: 300; }
+      .column-item-body .description p:last-of-type {
+        margin-bottom: 0; }
+
+@media (max-width: 1199.98px) {
+  .column-item {
+    margin-bottom: 45px; }
+    .column-item-body h3 {
+      font-size: 28px; }
+    .column-item-body .description {
+      font-size: 14px; } }
 
 /*
 * Use existing Bootstrap 4 classes and

@@ -21,7 +21,7 @@
 						<div class="timeline-item-block">
 							<h3><?php echo $timelineTitles[$i]; ?></h3>
 							<div class="timeline-body-text">
-								<?php echo $timelineTexts[$i]; ?>
+								<?php echo wpautop( $timelineTexts[$i] ); ?>
 							</div><!-- .timeline-body-text -->
 						</div><!-- .timeline-item-block -->
 					</div><!-- .timeline-item-body -->

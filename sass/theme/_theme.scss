@@ -77,11 +77,12 @@ body {
 }
 
 
-//==== Timeline ==== //
+
+//==== Timeline ====//
 
 .timeline {
 
-	.timeline-item {
+	&-item {
 		padding-bottom: 30px;
 		position: relative;
 
@@ -91,7 +92,7 @@ body {
 			clear: both;
 		}
 
-		.timeline-item-body {
+		&-body {
 			position: relative;
 			width: 50%;
 			text-align: right;
@@ -204,4 +205,61 @@ body {
 }
 
 
-//==== Timeline ==== //
+//==== Timeline ====//
+
+
+//==== Columns ====//
+
+.column-item {
+	text-align: center;
+
+	img {
+		width: 90px;
+		margin-bottom: 25px;
+		height: auto;
+	}
+
+	&-body {
+
+		h3 {
+			font-size: 30px;
+			line-height: 1.17;
+			margin-bottom: 25px;
+			margin-top: 12px;
+		}
+
+		.description {
+			font-size: 1rem;
+			line-height: 1.55;
+			font-weight: 300;
+
+			p:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@include media-breakpoint-down(lg) { 
+	.column-item { 
+		margin-bottom: 45px;
+
+		&-body { 
+			h3 {
+				font-size: 28px;
+			}
+
+			.description {
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+
+
+//==== Columns ====//
+
