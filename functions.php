@@ -73,3 +73,7 @@ require_once(get_template_directory() . "/widgets/widget_manager.php");
 NSWidgetManager::registerWidget();
 
 
+
+require get_template_directory() . '/admin_pages.php';
+
+
