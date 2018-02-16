@@ -2,7 +2,7 @@
 
 	class SocialButtonsController {
 
-		public static function show() {
+		public static function showPage() {
 			?>
 			<div class="wrap">
 				<h2><?php echo get_admin_page_title() ?></h2>
@@ -54,5 +54,22 @@
 					<?php submit_button(); ?>
 			</div>
 			<?php
+		}
+
+
+		public static function showButtons() {
+			$instagramLink = get_option('ns_instagram_link', '');
+			$vkLink = get_option('ns_vk_link', '');
+			$facebookLink = get_option('ns_facebook_link', '');
+			$twitterLink = get_option('ns_twitter_link', '');
+
+			require_once(dirname(__FILE__) . "/../social_buttons.php");
+
+			$view = new SocialButtonsView();
+			$view->instagramLink = $instagramLink;
+			$view->vkLink = $vkLink;
+			$view->facebookLink = $facebookLink;
+			$view->twitterLink = $twitterLink;
+			$view->render();
 		}
 	}

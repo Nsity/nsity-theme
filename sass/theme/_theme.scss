@@ -276,3 +276,15 @@ body {
 	color: white;
 	font-weight: 600;
 }
+
+
+.social-buttons {
+	.social-link {
+		display: inline-block;
+		padding-right: 20px;
+	}
+
+	.social-link:last-child {
+		padding-right: 0;
+	}
+}
